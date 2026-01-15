@@ -70,12 +70,12 @@
             #binding-cells = <0>;
             bindings = < &kp LBKT &kp RBKT &kp LEFT >;
         };
-        dakuahao: dakuahao {
+        dakuohao: dakuohao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp LBRC &kp RBRC &kp LEFT >;
         };
-        kuahao: kuahao {
+        kuohao: kuohao {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp LPAR &kp RPAR &kp LEFT >;
