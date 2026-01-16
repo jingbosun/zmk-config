@@ -22,7 +22,7 @@
             #binding-cells = <0>;
             bindings = < &macro_press &kp LSHFT &macro_tap &kp B &macro_release &kp LSHFT &kp U &kp Z &kp H &kp I &kp D &kp A &kp O &kp N9 &kp N7 &kp N1 &kp N0 &kp N6 &kp N2 &kp N6 &kp N2 >;
         };
-        tmuxnext: tmuxnext {
+        tmuxnextp: tmuxnextp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp O >;
@@ -31,6 +31,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp D >;
+        };
+        tmuxfloat: tmuxfloat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp P >;
         };
         tmuxc: tmuxc {
             compatible = "zmk,behavior-macro";
@@ -51,11 +56,31 @@
                 &macro_release &kp LCTRL
             >;
         };
-
-
-
-
-
+        tmuxwin: tmuxwin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp S >;
+        };
+        tmuxcopy: tmuxcopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp F >;
+        };
+        tmuxpaste: tmuxpaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp RBKT >;
+        };
+        tmuxprep: tmuxprep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp SEMI >;
+        };
+        tmuxnext: tmuxnext {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp N >;
+        };
         tmuxheng: tmuxheng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -93,10 +118,15 @@
             bindings = < &kp DQT &kp DQT &kp LEFT >;
         };
 
-        sel1: sel1 {
+        vimv: vimv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp N0 &kp V &kp DLLR >;
+        };
+        sel1: sel1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp N1 &kp J &kp DLLR >;
         };
         sel2: sel2 {
             compatible = "zmk,behavior-macro";
@@ -119,12 +149,31 @@
             bindings = < &kp N5 &kp J &kp DLLR >;
         };
 
+        ctrljian: ctrljian {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press   &kp LCTRL
+                &macro_tap     &kp MINUS 
+                &macro_release &kp LCTRL
+            >;
+        };
+        ctrljia: ctrljia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press   &kp LCTRL
+                &macro_tap     &kp PLUS
+                &macro_release &kp LCTRL
+            >;
+        };
 
 
     };
                 
                 
                 
+
 
 
 
