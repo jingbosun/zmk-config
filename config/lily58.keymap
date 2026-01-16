@@ -49,11 +49,31 @@
                 &macro_release &kp LCTRL
             >;
         };
-
-
-
-
-
+        tmuxwin: tmuxwin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp S >;
+        };
+        tmuxcopy: tmuxcopy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp F >;
+        };
+        tmuxpaste: tmuxpaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp RBKT >;
+        };
+        tmuxprep: tmuxprep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp SEMI >;
+        };
+        tmuxprep: tmuxnext {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp N >;
+        };
         tmuxheng: tmuxheng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,10 +111,15 @@
             bindings = < &kp DQT &kp DQT &kp LEFT >;
         };
 
-        sel1: sel1 {
+        vimv: vimv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp N0 &kp V &kp DLLR >;
+        };
+        sel1: sel1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp N1 &kp J &kp DLLR >;
         };
         sel2: sel2 {
             compatible = "zmk,behavior-macro";
@@ -117,6 +142,24 @@
             bindings = < &kp N5 &kp J &kp DLLR >;
         };
 
+        ctrljian: ctrljian {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press   &kp LCTRL
+                &macro_tap     &kp MINUS 
+                &macro_release &kp LCTRL
+            >;
+        };
+        ctrljia: ctrljia {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press   &kp LCTRL
+                &macro_tap     &kp PLUS
+                &macro_release &kp LCTRL
+            >;
+        };
 
 
     };
@@ -134,11 +177,11 @@
         //===============================================================================================================================
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
-            &kp ESC       &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
-            &kp ESC       &kp Q  &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
-            &mt LCTRL TAB &kp A  &kp S  &kp D         &kp F    &kp G                           &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
-            &kp LSHFT     &kp Z  &kp X  &kp C         &kp V    &kp B  &kp T        &kp Y       &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
-                                        &mt LALT LGUI &kp LALT &mo 1  &kp SPACE    &lt 3 LEFT  &lt 2 DOWN  &kp UP   &kp RIGHT
+            &lt ESC         &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
+            &kp 4 kp ESC    &kp Q  &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
+            &mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F    &kp G                           &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
+            &kp LSHFT       &kp Z  &kp X  &kp C         &kp V    &kp B  &mo 3        &lt 6 TILDE &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
+                                          &mt LALT LGUI &kp LALT &mo 1  &kp SPACE    &lt 2 LEFT  &lt 2 DOWN  &kp UP   &kp RIGHT
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
@@ -159,28 +202,64 @@
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
             &trans      &trans    &trans       &trans           &trans     &trans                                  &trans       &trans     &trans     &trans    &trans         &trans
-            &kp TILDE   &sel1     &sel2        &sel3            &sel4      &sel5                                   &trans       &trans     &trans     &trans    &trans         &tmuxd
-            &trans      &trans    &trans       &trans           &trans     &yinhao                                 &tmuxheng    &trans     &trans     &trans    &trans         &tmuxc
+            &kp TILDE   &vimv     &sel2        &sel3            &sel4      &sel5                                   &trans       &trans     &trans     &trans    &trans         &tmuxd
+            &kp GRAVE   &trans    &trans       &trans           &trans     &yinhao                                 &tmuxheng    &trans     &trans     &trans    &trans         &tmuxc
             &trans      &trans    &trans       &trans           &trans     &shuangyinhao  &kp CAPS        &trans   &tmuxshu     &trans     &trans     &trans    &tmuxcancel    &tmuxx
                                                &trans           &dakuohao  &kuohao        &zhongkuahao    &trans   &trans       &trans     &trans
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
 
-
-
         LAYER_3 {
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
-            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
-            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
-            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
-            &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans     &trans    &trans    &trans
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans        &trans
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &tmuxpaste    &tmuxwin
+            &trans      &trans    &trans       &trans           &trans     &trans                              &tmuxheng    &tmuxprep  &tmuxnext  &trans    &trans        &trans
+            &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &tmuxshu     &trans     &trans     &trans    &trans        &trans
                                                &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
 
+        LAYER_4 {
+        bindings = <
+            // ------------------------------------------------------------------------------------------------------------
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans     &trans
+            &trans      &mo 5     &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &ctrljian  &ctrljia
+            &trans      &trans    &trans       &trans           &trans     &trans                              &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT &kp C_MUTE &kp C_VOL_UP
+            &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans     &trans    &trans     &kp C_VOL_DOWN
+                                               &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans
+            // ------------------------------------------------------------------------------------------------------------
+        >; };
+
+        //===============================================================================================================================
+
+        LAYER_5 {
+        bindings = <
+            // ------------------------------------------------------------------------------------------------------------
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans           &trans             &trans           &trans    &trans
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans           &mmv MOVE_UP       &trans           &trans    &trans
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT  &trans    &trans
+            &kp K_PWR   &trans    &trans       &trans           &trans     &trans  &trans           &trans     &trans       &msc SCRL_DOWN   &msc SCRL_UP       &trans           &trans    &trans
+                                               &trans           &trans     &trans  &mkp LCLK        &mkp RCLK  &trans       &trans           &trans
+            // ------------------------------------------------------------------------------------------------------------
+        >; };
+
+        //===============================================================================================================================
+
+     //   LAYER_6 {
+     //   bindings = <
+            // ------------------------------------------------------------------------------------------------------------
+    //        &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
+    //        &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
+    //        &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans    &trans
+    //        &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans     &trans    &trans    &trans
+    //                                           &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans
+            // ------------------------------------------------------------------------------------------------------------
+    //    >; };
+
+        //===============================================================================================================================
 
 
         adjust_layer {
