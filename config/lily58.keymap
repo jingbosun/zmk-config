@@ -20,7 +20,7 @@
             #binding-cells = <0>;
             bindings = < &macro_press &kp LSHFT &macro_tap &kp B &macro_release &kp LSHFT &kp U &kp Z &kp H &kp I &kp D &kp A &kp O &kp N9 &kp N7 &kp N1 &kp N0 &kp N6 &kp N2 &kp N6 &kp N2 >;
         };
-        tmuxnext: tmuxnext {
+        tmuxnextp: tmuxnextp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp O >;
@@ -29,6 +29,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp D >;
+        };
+        tmuxfloat: tmuxfloat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = < &kp GRAVE &kp P >;
         };
         tmuxc: tmuxc {
             compatible = "zmk,behavior-macro";
@@ -69,7 +74,7 @@
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp SEMI >;
         };
-        tmuxprep: tmuxnext {
+        tmuxnext: tmuxnext {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = < &kp GRAVE &kp N >;
@@ -215,9 +220,9 @@
             // ------------------------------------------------------------------------------------------------------------
             &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &trans        &trans
             &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans     &trans    &tmuxpaste    &tmuxwin
-            &trans      &trans    &trans       &trans           &trans     &trans                              &tmuxheng    &tmuxprep  &tmuxnext  &trans    &trans        &trans
+            &trans      &trans    &trans       &trans           &trans     &trans                              &tmuxheng    &tmuxprep  &tmuxnextp &trans    &trans        &trans
             &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &tmuxshu     &trans     &trans     &trans    &trans        &trans
-                                               &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans
+                                               &trans           &trans     &trans  &trans        &trans        &tmuxfloat   &trans     &trans
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
