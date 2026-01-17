@@ -6,7 +6,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
@@ -190,11 +190,11 @@
         //===============================================================================================================================
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
-            &kp ESC       &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
-            &lt 4 ESC     &lt 5 Q  &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
-            &mt LCTRL TAB &kp A  &kp S  &kp D         &kp F    &kp G                           &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
-            &kp LSHFT     &kp Z  &kp X  &kp C         &kp V    &kp B  &mo 3        &lt 6 TILDE &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
-                                        &mt LALT LGUI &kp LALT &mo 1  &kp SPACE    &lt 2 LEFT  &lt 2 DOWN  &kp UP   &kp RIGHT
+            &kp ESC       &kp N1  &kp N2 &kp N3        &kp N4   &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
+            &lt 4 ESC     &lt 5 Q &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
+            &mt LCTRL TAB &kp A   &kp S  &kp D         &kp F    &kp G                           &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
+            &kp LSHFT     &kp Z   &kp X  &kp C         &kp V    &kp B  &mo 3        &lt 6 TILDE &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
+                                         &mt LALT LGUI &kp LALT &mo 1  &kp SPACE    &lt 2 LEFT  &lt 2 DOWN  &kp UP   &kp RIGHT
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
@@ -286,7 +286,7 @@
 //                    |         |         |         |         |         | |      |      |      |       |      |
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &trans &trans &trans &trans &trans &trans
-&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &trans &trans &trans &trans &trans &trans
+&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                         &trans &trans &trans &trans &trans &trans
 &trans             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans           &trans           &trans                                   &trans &trans &trans &trans &trans &trans
 &trans             &trans           &trans           &trans           &trans           &trans            &trans &trans  &trans &trans &trans &trans &trans &trans
                                   &trans           &trans           &trans           &trans            &trans           &trans  &trans &trans &trans &trans
