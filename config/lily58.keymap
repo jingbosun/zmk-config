@@ -187,7 +187,7 @@
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
             &kp ESC       &kp N1 &kp N2 &kp N3        &kp N4   &kp N5                          &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
-            &lt 4 ESC     &kp Q  &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
+            &lt 4 ESC     &lt 5 Q  &kp W  &kp E         &kp R    &kp T                           &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
             &mt LCTRL TAB &kp A  &kp S  &kp D         &kp F    &kp G                           &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
             &kp LSHFT     &kp Z  &kp X  &kp C         &kp V    &kp B  &mo 3        &lt 6 TILDE &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
                                         &mt LALT LGUI &kp LALT &mo 1  &kp SPACE    &lt 2 LEFT  &lt 2 DOWN  &kp UP   &kp RIGHT
@@ -245,6 +245,7 @@
         //===============================================================================================================================
 
         LAYER_5 {
+        bindings = <
             // ------------------------------------------------------------------------------------------------------------
             &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans           &trans             &trans           &trans    &trans
             &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &trans           &mmv MOVE_UP       &trans           &trans    &trans
