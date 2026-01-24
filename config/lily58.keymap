@@ -293,7 +293,7 @@
             // ------------------------------------------------------------------------------------------------------------
             &trans      &tmuxcopy &trans       &trans           &trans     &trans                              &trans       &trans     &trans      &trans    &tmuxpaste  &trans
             &tmuxcopy   &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &tmuxshang  &trans    &trans      &tmuxpaste
-            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &tmuxzuo   &tmuxxia    &tmuxyou  &trans      &tmuxwin
+            &trans      &trans    &trans       &trans           &trans     &trans                              &tmuxzuo     &tmuxxia   &tmuxshang  &tmuxyou  &trans      &tmuxwin
             &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans      &trans    &trans      &trans
                                                &trans           &trans     &trans  &trans        &tmuxnext     &tmuxnext    &trans     &trans
             // ------------------------------------------------------------------------------------------------------------
