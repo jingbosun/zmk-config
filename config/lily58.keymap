@@ -95,7 +95,7 @@
         tmuxcopy: tmuxcopy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &kp GRAVE &kp F >;
+            bindings = < &kp GRAVE &kp LS(F) >;
         };
         tmuxpaste: tmuxpaste {
             compatible = "zmk,behavior-macro";
@@ -292,10 +292,10 @@
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
             &trans      &tmuxcopy &trans       &trans           &trans     &trans                              &trans       &trans     &trans      &trans    &tmuxpaste  &trans
-            &tmuxcopy   &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &tmuxshang  &trans    &trans      &tmuxpaste
-            &trans      &trans    &trans       &trans           &trans     &trans                              &tmuxzuo     &tmuxxia   &tmuxshang  &tmuxyou  &trans      &tmuxwin
+            &tmuxcopy   &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans      &trans    &tmuxpaste  &tmuxwin
+            &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &tmuxprep  &tmuxnextp  &trans    &trans      &tmuxz
             &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans      &trans    &trans      &trans
-                                               &trans           &trans     &trans  &trans        &tmuxnext     &tmuxnext    &trans     &trans
+                                               &trans           &trans     &trans  &trans        &tmuxnext     &tmuxcopy    &trans     &trans
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
