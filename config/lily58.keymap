@@ -15,7 +15,7 @@
         vimsave: vimsave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = < &kp COLON &kp W &kp RET >;
+            bindings = < &kp ESC &kp COLON &kp W &kp RET >;
         };
         jialipc: jialipc {
             compatible = "zmk,behavior-macro";
@@ -219,8 +219,8 @@
             &kp ESC       &lt 4 N1  &kp N2 &kp N3        &kp N4   &kp N5                             &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
             &lt 4 ESC     &lt 5 Q   &kp W  &kp E         &kp R    &kp T                              &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
             &mt LCTRL TAB &kp A     &kp S  &kp D         &kp F    &kp G                              &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
-            &kp LSHFT     &kp Z     &kp X  &kp C         &kp V    &kp B  &mo 3          &lt 7 LEFT   &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &kp RSHFT
-                                           &mt LALT LGUI &kp LALT &mo 1  &lt 6 SPACE    &lt 2 MINUS  &lt 2 DOWN  &kp UP   &kp RIGHT
+            &kp LSHFT     &kp Z     &kp X  &kp C         &kp V    &kp B  &mo 3          &lt 7 LEFT   &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &mt RSHFT RIGHT
+                                           &mt LALT LGUI &kp LALT &mo 1  &lt 6 SPACE    &lt 2 MINUS  &lt 2 MINUS &kp DOWN &kp UP  
             // ------------------------------------------------------------------------------------------------------------
         >; };
         //===============================================================================================================================
