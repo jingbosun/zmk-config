@@ -219,7 +219,7 @@
             &kp ESC       &lt 4 N1  &kp N2 &kp N3        &kp N4   &kp N5                            &kp N6      &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
             &lt 4 ESC     &lt 5 Q   &kp W  &kp E         &kp R    &kp T                             &kp Y       &kp U    &kp I     &kp O   &kp P     &kp BSPC
             &mt LCTRL TAB &kp A     &kp S  &kp D         &kp F    &kp G                             &kp H       &kp J    &kp K     &kp L   &kp COLON &kp RET
-            &kp LSHFT     &kp Z     &kp X  &kp C         &kp V    &kp B  &mo 3          &lt 7 B     &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &mt RSHFT RIGHT
+            &kp LSHFT     &kp Z     &kp X  &kp C         &kp V    &kp B  &mo 3          &lt 7 B     &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH  &mt RSHFT SQT
                                            &mt LALT LGUI &kp LALT &mo 1  &lt 6 SPACE    &lt 2 LEFT  &lt 2 MINUS &kp DOWN &kp UP  
             // ------------------------------------------------------------------------------------------------------------
         >; };
@@ -291,7 +291,7 @@
         LAYER_6 {
         bindings = <
             // ------------------------------------------------------------------------------------------------------------
-            &trans      &tmuxcopy &trans       &trans           &trans     &trans                              &trans       &trans     &trans      &trans    &tmuxpaste  &trans
+            &trans      &tmuxcopy &trans       &trans           &trans     &trans                              &trans       &kp LEFT   &kp DOWN    &kp UP    &kp RIGHT   &trans
             &tmuxcopy   &trans    &trans       &trans           &trans     &trans                              &trans       &trans     &trans      &trans    &tmuxpaste  &tmuxwin
             &trans      &trans    &trans       &trans           &trans     &trans                              &trans       &tmuxprep  &tmuxnextp  &trans    &trans      &tmuxz
             &trans      &trans    &trans       &trans           &trans     &trans  &trans        &trans        &trans       &trans     &trans      &trans    &trans      &trans
